@@ -3,22 +3,33 @@
 		"baseUrl": ".",
 		"outDir": "build/dist",
 		"module": "esnext",
-		"target": "es5",
+		"target": "esnext",
 		"lib": ["es6", "dom"],
+		"sourceMap": false,
 		"allowJs": true,
-		"sourceMap": true,
+		"noEmit": true,
 		"jsx": "react",
 		"moduleResolution": "node",
 		"rootDir": "src",
+		"isolatedModules": true,
+		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
 		"noImplicitAny": true,
 		"importHelpers": true,
-		"strictNullChecks": true,
+		"strictNullChecks": false,
 		"suppressImplicitAnyIndexErrors": true,
-		"noUnusedLocals": true
+		"noUnusedLocals": true,
+		"paths": {
+			"@common": ["./src/@common"],
+			"@helpers": ["./src/@helpers"],
+			"@atoms": ["./src/atoms"]
+		}
 	},
+	"include": [
+		"src/**/*"
+	],
 	"exclude": [
 		"node_modules",
 		"build",
