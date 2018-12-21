@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import RootStyles, { Header } from './Root.styles'
+import { Header } from './Root.styles'
 
 import { H3 } from '@atoms'
 import Contacts from '../Contacts'
@@ -14,14 +14,14 @@ const titleText = (isRussian)
 	: 'My name is Alena and I am front-end engineer at Rocketbank'
 
 const Root = () => (
-	<RootStyles>
+	<>
 		<Header>
 			<H3>{headerText}</H3>
 			<H3>{titleText}</H3>
 		</Header>
 
 		<Contacts/>
-	</RootStyles>
+	</>
 )
 
 export default Root
