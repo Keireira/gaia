@@ -2,7 +2,7 @@
 	"name": "gaia",
 	"version": "0.0.1",
 	"homepage": "https://alena.red/",
-	"description": "Homa page",
+	"description": "Home page",
 	"contributors": [
 		{
 			"name": "Alena Dzhukich",
@@ -12,10 +12,10 @@
 	],
 	"license": "UNLICENSED",
 	"dependencies": {
-		"react": "^16.7.0-alpha.2",
-		"react-dom": "^16.7.0-alpha.2",
+		"react": "^16.7.0",
+		"react-dom": "^16.7.0",
 		"react-scripts-ts": "^3.1.0",
-		"styled-components": "^4.1.2"
+		"styled-components": "^4.1.3"
 	},
 	"scripts": {
 		"start": "react-scripts-ts start",
@@ -25,10 +25,14 @@
 	},
 	"devDependencies": {
 		"@types/jest": "^23.3.10",
-		"@types/node": "^10.12.12",
-		"@types/react": "^16.7.13",
+		"@types/node": "^10.12.18",
+		"@types/react": "^16.7.17",
 		"@types/react-dom": "^16.0.11",
-		"@types/styled-components": "^4.1.2",
+		"@types/styled-components": "^4.1.4",
 		"typescript": "^3.2.2"
+	},
+	"resolutions": {
+		"@types/react": "^16.7.17",
+		"@types/react-dom": "^16.0.11"
 	}
 }
