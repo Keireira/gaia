@@ -43,12 +43,6 @@ export default createGlobalStyle`
 		}
 	}
 
-	html, body, body > #app, body > #root {
-		min-height: 100%;
-		height: 100%;
-		width: 100%;
-	}
-
 	html {
 		font-family: sans-serif;
 		box-sizing: border-box;
@@ -100,11 +94,13 @@ export default createGlobalStyle`
 	a {
 		background-color: transparent;
 		text-decoration: none;
+		color: inherit;
 		-webkit-text-decoration-skip: objects;
 
 		&:hover, &:active, &:visited {
 			outline-width: 0;
 			text-decoration: none;
+			color: inherit;
 		}
 	}
 
