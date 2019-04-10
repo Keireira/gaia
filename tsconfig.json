@@ -1,42 +1,32 @@
 {
 	"compilerOptions": {
-		"baseUrl": ".",
-		"outDir": "build/dist",
-		"module": "esnext",
+		"outDir": "./dist/",
 		"target": "esnext",
-		"lib": ["es6", "dom"],
-		"sourceMap": false,
+		"module": "esnext",
+		"jsx": "react",
 		"allowJs": true,
 		"noEmit": true,
-		"jsx": "react",
-		"moduleResolution": "node",
-		"rootDir": "src",
 		"isolatedModules": true,
 		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"noImplicitReturns": true,
-		"noImplicitThis": true,
-		"noImplicitAny": true,
-		"importHelpers": true,
-		"strictNullChecks": false,
-		"suppressImplicitAnyIndexErrors": true,
-		"noUnusedLocals": true,
+		"moduleResolution": "node",
+		"baseUrl": "src",
+		"lib": ["es2015", "es2016", "es2017", "es2018", "esnext", "dom"],
 		"paths": {
-			"@common": ["./src/@common"],
-			"@helpers": ["./src/@helpers"],
-			"@atoms": ["./src/atoms"]
-		}
+			"@local/helpers": ["helpers/index"],
+			"@local/components": ["components/index"],
+			"@local/components/*": ["components/*"],
+
+			"@local/hooks": ["helpers/hooks/index"],
+			"@local/hooks/*": ["helpers/hooks/*"],
+
+			"@local": ["./index"],
+			"@local/*": ["./*"]
+		},
 	},
-	"include": [
-		"src/**/*"
-	],
 	"exclude": [
-		"node_modules",
-		"build",
-		"scripts",
-		"acceptance-tests",
-		"webpack",
-		"jest",
-		"src/setupTests.ts"
+		"./node_modules/**/*"
+	],
+	"include": [
+		"./src/**/*"
 	]
 }

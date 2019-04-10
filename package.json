@@ -1,38 +1,28 @@
 {
-	"name": "gaia",
-	"version": "0.0.1",
-	"homepage": "https://alena.red/",
-	"description": "Home page",
-	"contributors": [
-		{
-			"name": "Alena Dzhukich",
-			"email": "github@alena.red",
-			"url": "https://github.com/Keireira"
-		}
-	],
-	"license": "UNLICENSED",
-	"dependencies": {
-		"react": "^16.7.0",
-		"react-dom": "^16.7.0",
-		"react-scripts-ts": "^3.1.0",
-		"styled-components": "^4.1.3"
-	},
-	"scripts": {
-		"start": "react-scripts-ts start",
-		"build": "react-scripts-ts build",
-		"test": "react-scripts-ts test --env=jsdom",
-		"eject": "react-scripts-ts eject"
-	},
-	"devDependencies": {
-		"@types/jest": "^23.3.10",
-		"@types/node": "^10.12.18",
-		"@types/react": "^16.7.17",
-		"@types/react-dom": "^16.0.11",
-		"@types/styled-components": "^4.1.4",
-		"typescript": "^3.2.2"
-	},
-	"resolutions": {
-		"@types/react": "^16.7.17",
-		"@types/react-dom": "^16.0.11"
-	}
+  "name": "gaia",
+  "description": "alena.red",
+  "version": "0.0.0",
+  "dependencies": {
+    "@types/node": "^11.13.4",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.3",
+    "@types/styled-components": "^4.1.14",
+    "gatsby": "^2.3.17",
+    "gatsby-link": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-typescript": "^2.0.12",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.8.2"
+  },
+  "license": "unlicense",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --parser typescript --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.ts*\""
+  }
 }
