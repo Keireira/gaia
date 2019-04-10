@@ -15,7 +15,7 @@ export default createGlobalStyle`
 		font-size: 4rem;
 	}
 
-	div#root {
+	div#___gatsby > div[role="group"] {
 		height: 100vh;
 		min-height: 100%;
 
