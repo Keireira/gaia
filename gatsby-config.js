@@ -1,7 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: `A.D.`,
-  },
   plugins: [
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-typescript`,
