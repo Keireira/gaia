@@ -13,6 +13,9 @@ export default createGlobalStyle`
 		background-color: var(--gray);
 		color: var(--gray);
 		font-size: 4rem;
+		font-family: -apple-system, system-ui, BlinkMacSystemFont,
+			'Segoe UI', 'SF Pro Text', Roboto, 'Helvetica Neue',
+			Arial, sans-serif;
 	}
 
 	div#___gatsby > div[role="group"] {
