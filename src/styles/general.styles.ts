@@ -11,7 +11,7 @@ export default createGlobalStyle`
 
 	body {
 		background-color: var(--gray);
-		color: var(--snow);
+		color: var(--gray);
 		font-size: 4rem;
 	}
 
