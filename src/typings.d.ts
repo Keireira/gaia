@@ -1,18 +1,10 @@
-// images
-declare module '*.svg'
-declare module '*.png'
-declare module '*.jpg'
-declare module '*.jpeg'
-declare module '*.gif'
-declare module '*.bmp'
-declare module '*.tiff'
+declare const graphql: (query: TemplateStringsArray) => void
 
-// fonts
-declare module '*.woff2'
-declare module '*.woff'
+interface SvgrComponent extends React.StatelessComponent<React.SVGAttributes<SVGElement>> {}
 
-// styles
-declare module '*.styles.ts'
-
-// data
-declare module '*.json'
+declare module '*.svg' {
+  const svgUrl: string;
+  const svgComponent: SvgrComponent;
+  export default svgUrl;
+  export { svgComponent as ReactComponent }
+}
