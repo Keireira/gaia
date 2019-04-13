@@ -1,15 +1,16 @@
 import * as React from 'react'
 
+import { cn } from '../../helpers'
 import { Tag } from '../../atoms'
 
-import Root from './TagsRow.styles'
+import styles from './styles.css'
 
-const TagsRow = ({ tagsList }) => (
-	<Root>
+const TagsRow = ({ className, tagsList }) => (
+	<header className={cn(className, styles.tags)}>
 		{tagsList.map(({ label }) => (
 			<Tag key={label} label={label}/>
 		))}
-	</Root>
+	</header>
 )
 
 export default TagsRow

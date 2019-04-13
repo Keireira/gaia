@@ -1,13 +1,15 @@
 import * as React from 'react'
 
-import Cards from './AboutCards.styles'
 import { HelloCard, SkillsCard } from '../../molecules'
 
-const AboutCards = () => (
-	<Cards>
+import { cn } from '../../helpers'
+import styles from './styles.css'
+
+const AboutCards = ({ className, ...restProps }) => (
+	<div className={cn(className, styles.card)} {...restProps}>
 		<HelloCard/>
 		<SkillsCard/>
-	</Cards>
+	</div>
 )
 
 export default AboutCards

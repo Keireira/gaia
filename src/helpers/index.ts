@@ -1,1 +1,1 @@
-export { default as toPascalCase } from './toPascalCase'
+export { default as cn } from './classnames'

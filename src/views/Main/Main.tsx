@@ -1,11 +1,11 @@
 import * as React from 'react'
 import Link from 'gatsby-link'
 
-import { MainWrapper, Wrapper, MemeCardsWrapper, Memes } from './Main.styles'
-
 import { Card } from '../../atoms'
 import { TagsRow } from '../../molecules'
 import { AboutCards, LinkCards } from '../../organisms'
+
+import styles from './styles.css'
 
 const tags = [
 	{ label: 'js_dev', about: '' },
@@ -19,21 +19,21 @@ const tags = [
 
 const Main = () => {
 	return (
-		<MainWrapper>
+		<div className={styles.mainWrapper}>
 			<TagsRow tagsList={tags}/>
 
-			<Wrapper>
-				<MemeCardsWrapper>
+			<main className={styles.wrapper}>
+				<div className={styles.memeCardsWrapper}>
 					<AboutCards/>
 
-					<Memes>
+					<div className={styles.memes}>
 						Memes
-					</Memes>
-				</MemeCardsWrapper>
+					</div>
+				</div>
 
 				<LinkCards/>
-			</Wrapper>
-		</MainWrapper>
+			</main>
+		</div>
 	)
 }
 

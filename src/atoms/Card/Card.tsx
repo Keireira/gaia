@@ -1,12 +1,22 @@
-import React from 'react'
+import * as React from 'react'
 
-import CardRoot from './Card.styles'
+import { cn } from '../../helpers'
 
-const Card = ({ width, height, color, children, size }) => {
+import styles from './styles.css'
+
+const Card = ({ className, width, height, color, children, ...restProps }) => {
 	return (
-		<CardRoot width={width} height={height} color={color}>
+		<div
+			className={cn(className, styles.card)}
+			style={{
+				'--width': width,
+				'--height': height,
+				'--bg-color': `var(--${color})`,
+			}}
+			{...restProps}
+		>
 			{children}
-		</CardRoot>
+		</div>
 	)
 }
 
