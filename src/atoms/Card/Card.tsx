@@ -9,10 +9,10 @@ import styles from './Card.module.css'
 
 // component
 const Card = (props) => {
-	const { className, width, height, color, children, ...restProps } = props
+	const { className, Component = 'div', width, height, color, children, ...restProps } = props
 	
 	return (
-		<div
+		<Component
 			className={cn(className, styles.card)}
 			style={{
 				'--width': width,
@@ -22,7 +22,7 @@ const Card = (props) => {
 			{...restProps}
 		>
 			{children}
-		</div>
+		</Component>
 	)
 }
 

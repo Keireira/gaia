@@ -12,7 +12,7 @@ import styles from './LinkCards.module.css'
 
 // component
 const LinkCards = ({ className, ...restProps }) => (
-	<div className={cn(className, styles.linksWrapper)} {...restProps}>
+	<ul className={cn(className, styles.linksWrapper)} {...restProps}>
 		<LinkCard
 			className={styles.link}
 			name="github"
@@ -36,8 +36,7 @@ const LinkCards = ({ className, ...restProps }) => (
 			name="twitter"
 			href="https://twitter.com/keireira"
 		/>
-
-	</div>
+	</ul>
 )
 
 export default LinkCards
