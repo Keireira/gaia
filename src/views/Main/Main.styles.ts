@@ -25,15 +25,3 @@ export const Memes = styled.div`
 	width: 100%;
 	height: 100%;
 `
-
-export const Links = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-self: flex-start;
-
-	width: calc(6 * var(--grid-unit));
-
-	& > *:nth-of-type(even) {
-		align-self: flex-end;
-	}
-`

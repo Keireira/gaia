@@ -2,6 +2,7 @@ module.exports = {
   plugins: [
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-typescript`,
+		'gatsby-plugin-svgr',
 		{
 			resolve: 'gatsby-plugin-favicon',
 			options: {
