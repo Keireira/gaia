@@ -1,10 +1,14 @@
+// libs
 import * as React from 'react'
 
+// styles
 import { cn } from '../../helpers'
+import styles from './Icon.module.css'
 
+// types
 import { IconProps } from './Icon.d'
-import styles from './styles.css'
 
+// component
 const Icon = ({ className, name, ...restProps }: IconProps) => {
 	const { id } = require(`./assets/${name}.svg`).default
 

@@ -1,10 +1,16 @@
+// libs
 import * as React from 'react'
 
+// styles
 import { cn } from '../../helpers'
+import styles from './Card.module.css'
 
-import styles from './styles.css'
+// types
 
-const Card = ({ className, width, height, color, children, ...restProps }) => {
+// component
+const Card = (props) => {
+	const { className, width, height, color, children, ...restProps } = props
+	
 	return (
 		<div
 			className={cn(className, styles.card)}

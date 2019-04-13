@@ -1,8 +1,13 @@
+// libs
 import * as React from 'react'
 
+// styles
 import { cn } from '../../helpers'
-import styles from './styles.css'
+import styles from './Typography.module.css'
 
+// types
+
+// components
 export const H1 = ({ className, ...restProps }) => (
 	<h1 className={cn(className, styles.h1)} {...restProps}/>
 )

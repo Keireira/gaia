@@ -1,10 +1,16 @@
+// libs
 import * as React from 'react'
 
-import { cn } from '../../helpers'
+// components
 import { Tag } from '../../atoms'
 
-import styles from './styles.css'
+// styles
+import { cn } from '../../helpers'
+import styles from './TagsRow.module.css'
 
+// types
+
+// component
 const TagsRow = ({ className, tagsList }) => (
 	<header className={cn(className, styles.tags)}>
 		{tagsList.map(({ label }) => (

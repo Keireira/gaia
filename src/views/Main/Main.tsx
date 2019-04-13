@@ -1,12 +1,18 @@
+// libs
 import * as React from 'react'
 import Link from 'gatsby-link'
 
+// components
 import { Card } from '../../atoms'
 import { TagsRow } from '../../molecules'
 import { AboutCards, LinkCards } from '../../organisms'
 
-import styles from './styles.css'
+// styles
+import styles from './Main.module.css'
 
+// types
+
+// data
 const tags = [
 	{ label: 'js_dev', about: '' },
 	{ label: 'react', about: '' },
@@ -17,6 +23,7 @@ const tags = [
 	{ label: 'kittens', about: '' },
 ]
 
+// component
 const Main = () => {
 	return (
 		<div className={styles.mainWrapper}>
