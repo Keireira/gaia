@@ -17,6 +17,7 @@ const LinkCard = ({ className, name, href, ...restProps }) => (
 		width={3}
 		height={3}
 		color="red"
+		Component="li"
 		{...restProps}
 	>
 		<Href className={styles.link} to={href}>
