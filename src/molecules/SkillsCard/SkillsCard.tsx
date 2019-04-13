@@ -1,10 +1,16 @@
+// libs
 import * as React from 'react'
 
-import { cn } from '../../helpers'
+// components
 import { H1, H3, Card } from '../../atoms'
 
-import styles from './styles.css'
+// styles
+import { cn } from '../../helpers'
+import styles from './SkillsCard.module.css'
 
+// types
+
+// component
 const SkillsCard = ({ className, ...restProps }) => (
 	<Card
 		className={cn(className, styles.card)}

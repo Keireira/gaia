@@ -1,10 +1,16 @@
+// libs
 import * as React from 'react'
 
+// components
 import { LinkCard } from '../../molecules'
 
+// styles
 import { cn } from '../../helpers'
-import styles from './styles.css'
+import styles from './LinkCards.module.css'
 
+// types
+
+// component
 const LinkCards = ({ className, ...restProps }) => (
 	<div className={cn(className, styles.linksWrapper)} {...restProps}>
 		<LinkCard
