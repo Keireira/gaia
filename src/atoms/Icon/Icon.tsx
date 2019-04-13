@@ -1,20 +1,18 @@
 import * as React from 'react'
 
-import { toPascalCase } from '../../helpers'
+import { cn } from '../../helpers'
 
-import * as Icons from './assets'
 import { IconProps } from './Icon.d'
-import StyledIcon from './Icon.styles'
+import styles from './styles.css'
 
-const Icon = ({ name, ...restProps }: IconProps) => {
-	const iconName = toPascalCase(name)
-	const FindedIcon = Icons[iconName]
+const Icon = ({ className, name, ...restProps }: IconProps) => {
+	const { id } = require(`./assets/${name}.svg`).default
 
-	if (FindedIcon) {
-		return <StyledIcon as={FindedIcon} {...restProps}/>
-	}
-
-	return null
+	return (
+		<svg className={cn(className, styles.icon)}>
+			<use xlinkHref={`#${id}`} />
+		</svg>
+	)
 }
 
 export default Icon

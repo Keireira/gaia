@@ -1,0 +1,10 @@
+.card {
+	--width: 1;
+	--height: 1;
+	--bg-color: var(--snow);
+
+	width: calc(var(--width) * var(--grid-unit));
+	height: calc(var(--height) * var(--grid-unit));
+
+	background-color: var(--bg-color);
+}

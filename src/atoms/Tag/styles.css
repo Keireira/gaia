@@ -1,0 +1,11 @@
+.tag {
+	color: var(--pastel-gray);
+	font-size: 10rem;
+
+	cursor: pointer;
+	transition: color 0.2s ease-in;
+}
+
+.tag:hover {
+	color: var(--snow);
+}
