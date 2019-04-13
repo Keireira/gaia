@@ -31,7 +31,7 @@ const Main = () => {
 					</Memes>
 				</MemeCardsWrapper>
 
-				<LinkCards/>>
+				<LinkCards/>
 			</Wrapper>
 		</MainWrapper>
 	)
