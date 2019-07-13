@@ -8,8 +8,8 @@ import styles from './Tag.module.css'
 // types
 
 // component
-const Tag = ({ className, label }) => (
-	<h6 className={cn(className, styles.tag)}>{`#${label}`}</h6>
+const Tag = ({ className, label, ...restProps }) => (
+	<h6 className={cn(className, styles.tag)} {...restProps}>{`#${label}`}</h6>
 )
 
 export default Tag
