@@ -1,11 +1,11 @@
 // libs
-import * as React from 'react'
+import React, { useState } from 'react'
 import Link from 'gatsby-link'
 
 // components
 import { Card } from '../../atoms'
 import { TagsRow } from '../../molecules'
-import { AboutCards, LinkCards } from '../../organisms'
+import { AboutCards, LinkCards, Memes } from '../../organisms'
 
 // styles
 import styles from './Main.module.css'
@@ -14,28 +14,28 @@ import styles from './Main.module.css'
 
 // data
 const tags = [
-	{ label: 'js_dev', about: '' },
-	{ label: 'react', about: '' },
-	{ label: 'frontend', about: '' },
-	{ label: 'css', about: '' },
-	{ label: 'styled', about: '' },
-	{ label: 'mordor', about: '' },
-	{ label: 'kittens', about: '' },
+	{ label: 'js', about: 'Where is my this?' },
+	{ label: 'react', about: 'Doing whatever Dan Abramov says to do' },
+	{ label: 'frontend', about: `Do you want some To-Do List apps?` },
+	{ label: 'css', about: `CSS\nIS\nAWE|SOME` },
+	{ label: 'styled', about: '>>> S.T.Y.L.E.D <<<' },
+	{ label: 'mordor', about: 'God Save the Tsar!' },
+	{ label: 'kittens', about: '( ⓛ ﻌ ⓛ *)' },
 ]
 
 // component
 const Main = () => {
+	const [activeTag, setActiveTag] = useState()
+
 	return (
 		<div className={styles.mainWrapper}>
-			<TagsRow tagsList={tags}/>
+			<TagsRow tagsList={tags} onChange={setActiveTag}/>
 
 			<main className={styles.wrapper}>
 				<div className={styles.memeCardsWrapper}>
 					<AboutCards/>
 
-					<div className={styles.memes}>
-						Memes
-					</div>
+					<Memes tag={activeTag}/>
 				</div>
 
 				<LinkCards/>

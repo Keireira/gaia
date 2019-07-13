@@ -11,10 +11,10 @@ import styles from './TagsRow.module.css'
 // types
 
 // component
-const TagsRow = ({ className, tagsList }) => (
+const TagsRow = ({ className, tagsList, onChange }) => (
 	<header className={cn(className, styles.tags)}>
-		{tagsList.map(({ label }) => (
-			<Tag key={label} label={label}/>
+		{tagsList.map((tag) => (
+			<Tag key={tag.label} label={tag.label} onClick={() => onChange(tag)}/>
 		))}
 	</header>
 )

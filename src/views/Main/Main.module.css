@@ -18,8 +18,3 @@
 
 	width: calc(18 * var(--grid-unit));
 }
-
-.memes {
-	width: 100%;
-	height: 100%;
-}
