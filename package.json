@@ -26,5 +26,8 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build"
-  }
+	},
+	"engines": {
+		"node": ">=10.13.0"
+	}
 }
