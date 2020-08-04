@@ -1,10 +1,12 @@
-import * as React from 'react'
+import React from 'react'
+
+import MainTemplate from 'templates/MainTemplate'
 
 const NotFoundPage = () => (
-  <div>
+  <MainTemplate>
     <h1>NOT FOUND</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
+  </MainTemplate>
 )
 
 export default NotFoundPage

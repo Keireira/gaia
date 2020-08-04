@@ -1,7 +1,7 @@
-import * as React from 'react'
+import React from 'react'
 
-import { Main } from '../views'
+import About from 'views/About'
 
-const IndexPage = () => (<Main/>)
+const IndexPage = () => (<About/>)
 
 export default IndexPage

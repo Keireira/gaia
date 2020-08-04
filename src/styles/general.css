@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 :root {
-	--grid-unit: calc(100vw / 24);
+	--grid-unit: calc(100vw / 40);
 }
 
 html {
-	font-size: calc(0.0571428571 * var(--grid-unit)); /* 1680px */
+	font-size: calc(0.125 * var(--grid-unit)); /* 16px for 1280px */
 }
 
 body {
-	background-color: var(--gray);
 	color: var(--gray);
 	font-size: 4rem;
-	font-family: -apple-system, system-ui, BlinkMacSystemFont,
-		'Segoe UI', 'SF Pro Text', Roboto, 'Helvetica Neue',
-		Arial, sans-serif;
+	font-weight: 300;
+	font-family: 'Roboto Mono', monospace;
 }
 
 div#___gatsby > div[role="group"] {

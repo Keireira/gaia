@@ -1,0 +1,4 @@
+.wrapper {
+	margin: 0 auto;
+	width: calc(26 * var(--grid-unit));
+}
