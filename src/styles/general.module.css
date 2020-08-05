@@ -5,7 +5,7 @@
 }
 
 html {
-	font-size: calc(0.125 * var(--grid-unit)); /* 16px for 1280px */
+	font-size: 4px;
 }
 
 body {
