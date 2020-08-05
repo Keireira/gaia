@@ -9,9 +9,9 @@ const prodPlugins = [
 ]
 
 const commonPlugins = [
-	`gatsby-plugin-react-helmet`,
+	// `gatsby-plugin-react-helmet`,
 	`gatsby-plugin-typescript`,
-	'gatsby-plugin-svg-sprite',
+	// 'gatsby-plugin-svg-sprite',
 	{
 		resolve: 'gatsby-plugin-favicon',
 		options: {
