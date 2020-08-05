@@ -1,0 +1,25 @@
+.tagCard + .tagCard {
+	margin-top: 10rem;
+}
+
+.tag {
+	font-weight: bold;
+	opacity: 0.3;
+	transition: opacity 0.2s ease-in;
+	margin-bottom: 4rem;
+	cursor: pointer;
+	display: inline-flex;
+}
+
+.tag:hover {
+	opacity: 1;
+}
+
+.divider {
+	border-left: 1rem solid;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 4rem;
+
+	line-height: 1.5;
+}

@@ -26,18 +26,15 @@ footer, header, hgroup, menu, nav, section {
 * {
 	box-sizing: inherit;
 	-webkit-appearance: none;
-
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-
 	-webkit-tap-highlight-color: transparent;
-
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
+}
 
-	&::before, &::after {
-		box-sizing: inherit;
-	}
+*::before, *::after {
+	box-sizing: inherit;
 }
 
 html {
@@ -58,11 +55,14 @@ ol, ul {
 
 blockquote, q {
 	quotes: none;
+}
 
-	&::before, &::after {
-		content: '';
-		content: none;
-	}
+blockquote::before,
+q::before,
+blockquote::after,
+q::after {
+	content: '';
+	content: none;
 }
 
 table {
@@ -72,10 +72,17 @@ table {
 
 input, button, textarea, select {
 	border: none;
+}
 
-	&:focus, &:active {
-		outline: none;
-	}
+input:focus,
+button:focus,
+textarea:focus,
+select:focus,
+input:active,
+button:active,
+textarea:active,
+select:active {
+	outline: none;
 }
 
 input[disabled] {
@@ -93,12 +100,12 @@ a {
 	text-decoration: none;
 	color: inherit;
 	-webkit-text-decoration-skip: objects;
+}
 
-	&:hover, &:active, &:visited {
-		outline-width: 0;
-		text-decoration: none;
-		color: inherit;
-	}
+a:hover, a:active, a:visited {
+	outline-width: 0;
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Hide the overflow in IE. */
@@ -110,19 +117,12 @@ svg:not(:root) {
 img {
 	border-style: none;
 }
-
-button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+button::-moz-focus-inner, [type='button']::-moz-focus-inner, [type='reset']::-moz-focus-inner, [type='submit']::-moz-focus-inner {
 	border-style: none;
 	padding: 0;
 }
 
-button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+button:-moz-focusring, [type='button']:-moz-focusring, [type='reset']:-moz-focusring, [type='submit']:-moz-focusring {
 	outline: 1px dotted ButtonText;
 }
 

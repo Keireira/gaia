@@ -1,0 +1,20 @@
+.about {
+	border-color: rgba(247, 143, 179, 1);
+}
+
+.photos {
+	border-color: rgba(245, 205, 121, 1);
+}
+
+.links {
+	border-color: rgba(61, 193, 211, 1);
+}
+
+.link {
+	display: inline-flex;
+	border-bottom: 1px dashed rgba(84, 109, 229, 1);
+}
+
+br + .link {
+	margin-top: 2rem;
+}
