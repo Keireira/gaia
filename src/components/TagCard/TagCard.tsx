@@ -3,7 +3,7 @@ import classnames from 'classnames'
 
 import { Props } from './TagCard.d'
 
-import styles from './TagCard.css'
+import styles from './TagCard.module.css'
 
 const TagCard = ({ children, className, tag }: Props) => (
 	<div className={styles.tagCard}>

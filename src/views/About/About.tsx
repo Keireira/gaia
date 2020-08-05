@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import MainTemplate from 'templates/MainTemplate'
 import TagCard from 'components/TagCard'
 
-import styles from './About.css'
+import styles from './About.module.css'
 
 const getYears = () => {
 	const start = new Date('2016-08-01')

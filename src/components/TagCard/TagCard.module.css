@@ -3,7 +3,7 @@
 }
 
 .tag {
-	font-weight: bold;
+	font-weight: 700;
 	opacity: 0.3;
 	transition: opacity 0.2s ease-in;
 	margin-bottom: 4rem;
